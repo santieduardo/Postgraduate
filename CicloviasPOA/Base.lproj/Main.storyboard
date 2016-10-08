@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XHU-rE-DZK">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bike Paths View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="BikePathsViewController" customModule="CicloviasPOA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="46" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xEK-We-bpD">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="46" id="qk5-jp-469" customClass="BikePathsTableViewCell" customModule="CicloviasPOA" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qk5-jp-469" id="sOJ-iU-qn9">
+                                            <frame key="frameInset" width="342" height="45.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="urW-2B-rbj">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="26" id="i7J-te-RFS"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cw8-au-VzT">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="2gH-Q9-nw8"/>
+                                                        <constraint firstAttribute="height" constant="30" id="eTt-qU-BaB"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Cw8-au-VzT" firstAttribute="leading" secondItem="urW-2B-rbj" secondAttribute="trailing" constant="8" id="4j3-dU-e8U"/>
+                                                <constraint firstItem="urW-2B-rbj" firstAttribute="leading" secondItem="sOJ-iU-qn9" secondAttribute="leading" constant="8" id="8u6-hc-JCs"/>
+                                                <constraint firstAttribute="trailing" secondItem="Cw8-au-VzT" secondAttribute="trailing" id="8zH-BB-uVx"/>
+                                                <constraint firstItem="Cw8-au-VzT" firstAttribute="top" secondItem="sOJ-iU-qn9" secondAttribute="top" constant="7" id="axw-e1-XWZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="Cw8-au-VzT" secondAttribute="bottom" constant="8" id="cji-gW-w7h"/>
+                                                <constraint firstAttribute="bottom" secondItem="urW-2B-rbj" secondAttribute="bottom" constant="10" id="oUA-fp-Sns"/>
+                                                <constraint firstItem="urW-2B-rbj" firstAttribute="top" secondItem="sOJ-iU-qn9" secondAttribute="top" constant="9" id="s1D-yK-mVH"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="name" destination="urW-2B-rbj" id="7uP-HW-bNY"/>
+                                            <outlet property="status" destination="Cw8-au-VzT" id="gDn-Fr-ZUM"/>
+                                            <segue destination="0nj-gx-VVF" kind="show" identifier="goToPolyline" id="E51-U0-nse"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="dTs-lR-PAT"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="01b-B6-IHq"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cFi-da-vZ8"/>
+                    <connections>
+                        <outlet property="tableView" destination="xEK-We-bpD" id="YYA-bN-wDQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888.79999999999995" y="517.6911544227886"/>
+        </scene>
+        <!--Polyline View Controller-->
+        <scene sceneID="zMa-tu-bnY">
+            <objects>
+                <viewController id="0nj-gx-VVF" customClass="PolylineViewController" customModule="CicloviasPOA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eiy-i5-ut8"/>
+                        <viewControllerLayoutGuide type="bottom" id="eVY-hU-shr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="apJ-3q-uk4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eLu-sJ-MbU"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eVY-hU-shr" firstAttribute="top" secondItem="eLu-sJ-MbU" secondAttribute="bottom" id="CaP-pY-o7e"/>
+                            <constraint firstAttribute="trailing" secondItem="eLu-sJ-MbU" secondAttribute="trailing" id="egm-1n-yyK"/>
+                            <constraint firstItem="eLu-sJ-MbU" firstAttribute="top" secondItem="eiy-i5-ut8" secondAttribute="bottom" id="ibz-oJ-lON"/>
+                            <constraint firstItem="eLu-sJ-MbU" firstAttribute="leading" secondItem="apJ-3q-uk4" secondAttribute="leading" id="woX-pc-5Df"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="eLu-sJ-MbU" id="0yI-6D-UbO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lUw-fd-l4w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1624.8" y="517.6911544227886"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ywY-5L-3T8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XHU-rE-DZK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="v4V-sY-ure">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Orh-gi-azf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c3s-bz-sSO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134" y="519"/>
+        </scene>
+    </scenes>
+</document>

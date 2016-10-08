@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A088235F1DA025E60084E4F0 /* PolylineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A088235E1DA025E60084E4F0 /* PolylineViewController.swift */; };
+		A0D9EFF51DA8749E0004DDAB /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9EFF41DA8749E0004DDAB /* Extension.swift */; };
+		A0E66C0F1DA03CED00EA2ABF /* Path+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E66C0D1DA03CED00EA2ABF /* Path+CoreDataClass.swift */; };
+		A0E66C101DA03CED00EA2ABF /* Path+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E66C0E1DA03CED00EA2ABF /* Path+CoreDataProperties.swift */; };
+		C27D1E411D96F5D7009A85EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27D1E401D96F5D7009A85EF /* AppDelegate.swift */; };
+		C27D1E431D96F5D7009A85EF /* BikePathsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27D1E421D96F5D7009A85EF /* BikePathsViewController.swift */; };
+		C27D1E461D96F5D7009A85EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27D1E441D96F5D7009A85EF /* Main.storyboard */; };
+		C27D1E491D96F5D7009A85EF /* CicloviasPOA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C27D1E471D96F5D7009A85EF /* CicloviasPOA.xcdatamodeld */; };
+		C27D1E4B1D96F5D7009A85EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C27D1E4A1D96F5D7009A85EF /* Assets.xcassets */; };
+		C27D1E4E1D96F5D7009A85EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27D1E4C1D96F5D7009A85EF /* LaunchScreen.storyboard */; };
+		C27D1E5A1D96F6F4009A85EF /* BikePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27D1E591D96F6F4009A85EF /* BikePath.swift */; };
+		C27D1E5C1D96F937009A85EF /* BikePathsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27D1E5B1D96F937009A85EF /* BikePathsTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A088235E1DA025E60084E4F0 /* PolylineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolylineViewController.swift; sourceTree = "<group>"; };
+		A0D9EFF41DA8749E0004DDAB /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		A0E66C0D1DA03CED00EA2ABF /* Path+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Path+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A0E66C0E1DA03CED00EA2ABF /* Path+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Path+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C27D1E3D1D96F5D7009A85EF /* CicloviasPOA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CicloviasPOA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C27D1E401D96F5D7009A85EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C27D1E421D96F5D7009A85EF /* BikePathsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikePathsViewController.swift; sourceTree = "<group>"; };
+		C27D1E451D96F5D7009A85EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C27D1E481D96F5D7009A85EF /* CicloviasPOA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CicloviasPOA.xcdatamodel; sourceTree = "<group>"; };
+		C27D1E4A1D96F5D7009A85EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C27D1E4D1D96F5D7009A85EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C27D1E4F1D96F5D7009A85EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C27D1E591D96F6F4009A85EF /* BikePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikePath.swift; sourceTree = "<group>"; };
+		C27D1E5B1D96F937009A85EF /* BikePathsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikePathsTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C27D1E3A1D96F5D6009A85EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0D9EFF31DA874870004DDAB /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				A0D9EFF41DA8749E0004DDAB /* Extension.swift */,
+			);
+			name = helper;
+			sourceTree = "<group>";
+		};
+		C27D1E341D96F5D6009A85EF = {
+			isa = PBXGroup;
+			children = (
+				C27D1E3F1D96F5D7009A85EF /* CicloviasPOA */,
+				C27D1E3E1D96F5D7009A85EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C27D1E3E1D96F5D7009A85EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C27D1E3D1D96F5D7009A85EF /* CicloviasPOA.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C27D1E3F1D96F5D7009A85EF /* CicloviasPOA */ = {
+			isa = PBXGroup;
+			children = (
+				A0D9EFF31DA874870004DDAB /* helper */,
+				C27D1E581D96F661009A85EF /* View */,
+				C27D1E571D96F65C009A85EF /* Model */,
+				C27D1E561D96F63A009A85EF /* Others */,
+				C27D1E551D96F632009A85EF /* Controller */,
+			);
+			path = CicloviasPOA;
+			sourceTree = "<group>";
+		};
+		C27D1E551D96F632009A85EF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C27D1E421D96F5D7009A85EF /* BikePathsViewController.swift */,
+				C27D1E5B1D96F937009A85EF /* BikePathsTableViewCell.swift */,
+				A088235E1DA025E60084E4F0 /* PolylineViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C27D1E561D96F63A009A85EF /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				C27D1E4F1D96F5D7009A85EF /* Info.plist */,
+				C27D1E401D96F5D7009A85EF /* AppDelegate.swift */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		C27D1E571D96F65C009A85EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C27D1E471D96F5D7009A85EF /* CicloviasPOA.xcdatamodeld */,
+				A0E66C0D1DA03CED00EA2ABF /* Path+CoreDataClass.swift */,
+				A0E66C0E1DA03CED00EA2ABF /* Path+CoreDataProperties.swift */,
+				C27D1E591D96F6F4009A85EF /* BikePath.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C27D1E581D96F661009A85EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C27D1E4A1D96F5D7009A85EF /* Assets.xcassets */,
+				C27D1E4C1D96F5D7009A85EF /* LaunchScreen.storyboard */,
+				C27D1E441D96F5D7009A85EF /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C27D1E3C1D96F5D6009A85EF /* CicloviasPOA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C27D1E521D96F5D7009A85EF /* Build configuration list for PBXNativeTarget "CicloviasPOA" */;
+			buildPhases = (
+				C27D1E391D96F5D6009A85EF /* Sources */,
+				C27D1E3A1D96F5D6009A85EF /* Frameworks */,
+				C27D1E3B1D96F5D6009A85EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CicloviasPOA;
+			productName = CicloviasPOA;
+			productReference = C27D1E3D1D96F5D7009A85EF /* CicloviasPOA.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C27D1E351D96F5D6009A85EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Eduardo Santi";
+				TargetAttributes = {
+					C27D1E3C1D96F5D6009A85EF = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9KS6X927VF;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C27D1E381D96F5D6009A85EF /* Build configuration list for PBXProject "CicloviasPOA" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C27D1E341D96F5D6009A85EF;
+			productRefGroup = C27D1E3E1D96F5D7009A85EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C27D1E3C1D96F5D6009A85EF /* CicloviasPOA */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C27D1E3B1D96F5D6009A85EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C27D1E4E1D96F5D7009A85EF /* LaunchScreen.storyboard in Resources */,
+				C27D1E4B1D96F5D7009A85EF /* Assets.xcassets in Resources */,
+				C27D1E461D96F5D7009A85EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C27D1E391D96F5D6009A85EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0D9EFF51DA8749E0004DDAB /* Extension.swift in Sources */,
+				A0E66C101DA03CED00EA2ABF /* Path+CoreDataProperties.swift in Sources */,
+				C27D1E5C1D96F937009A85EF /* BikePathsTableViewCell.swift in Sources */,
+				C27D1E431D96F5D7009A85EF /* BikePathsViewController.swift in Sources */,
+				A0E66C0F1DA03CED00EA2ABF /* Path+CoreDataClass.swift in Sources */,
+				A088235F1DA025E60084E4F0 /* PolylineViewController.swift in Sources */,
+				C27D1E5A1D96F6F4009A85EF /* BikePath.swift in Sources */,
+				C27D1E411D96F5D7009A85EF /* AppDelegate.swift in Sources */,
+				C27D1E491D96F5D7009A85EF /* CicloviasPOA.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C27D1E441D96F5D7009A85EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C27D1E451D96F5D7009A85EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C27D1E4C1D96F5D7009A85EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C27D1E4D1D96F5D7009A85EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C27D1E501D96F5D7009A85EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C27D1E511D96F5D7009A85EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C27D1E531D96F5D7009A85EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9KS6X927VF;
+				INFOPLIST_FILE = CicloviasPOA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.eduardosanti.CicloviasPOA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C27D1E541D96F5D7009A85EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9KS6X927VF;
+				INFOPLIST_FILE = CicloviasPOA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.eduardosanti.CicloviasPOA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C27D1E381D96F5D6009A85EF /* Build configuration list for PBXProject "CicloviasPOA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C27D1E501D96F5D7009A85EF /* Debug */,
+				C27D1E511D96F5D7009A85EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C27D1E521D96F5D7009A85EF /* Build configuration list for PBXNativeTarget "CicloviasPOA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C27D1E531D96F5D7009A85EF /* Debug */,
+				C27D1E541D96F5D7009A85EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C27D1E471D96F5D7009A85EF /* CicloviasPOA.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C27D1E481D96F5D7009A85EF /* CicloviasPOA.xcdatamodel */,
+			);
+			currentVersion = C27D1E481D96F5D7009A85EF /* CicloviasPOA.xcdatamodel */;
+			path = CicloviasPOA.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C27D1E351D96F5D6009A85EF /* Project object */;
+}
